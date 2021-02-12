@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/cover/"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script>
+      var x = 0;
+      setInterval(() => {
+        x++;
+        document.getElementById("counter").innerHTML = x;
+        if (x === 10) x = 0;
+      }, 1000);
+    </script>
+  </head>
+
+  <body>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Counter 1-10</h3>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading" align="center" id="counter"></h1>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner"></div>
+      </footer>
+    </div>
+  </body>
+</html>
